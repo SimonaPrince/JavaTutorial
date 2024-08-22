@@ -1,0 +1,36 @@
+package CoreTutorial;
+
+public class Product {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    String name;
+     double price;
+     String code;
+    public Product(String nm,Double pr,String cd){
+        this.name=nm;
+        this.price=pr;
+        this.code=cd;
+    }
+}
