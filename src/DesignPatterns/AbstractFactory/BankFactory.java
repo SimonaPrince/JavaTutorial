@@ -1,13 +1,24 @@
 package DesignPatterns.AbstractFactory;
 
-public class BankFactory extends AbstractFactory{
+public class BankFactory extends AbstractFactory {
+
     @Override
-    public Bank getBank(String name) {
+    public Bank getBank(String bankName) {
+        if(bankName == null){
+            return null;
+        }
+        if(bankName.equalsIgnoreCase("HDFC")){
+            return new HDFC();
+        } else if(bankName.equalsIgnoreCase("ICICI")){
+            return new ICICI();
+        } else if(bankName.equalsIgnoreCase("SBI")){
+            return new SBI();
+        }
         return null;
     }
 
     @Override
-    public Loan getLoan(String Loan) {
+    public Loan getLoan(String LoanName) {
         return null;
     }
 }

@@ -1,5 +1,6 @@
 package DesignPatterns.AbstractFactory;
 
 public interface Bank {
-    String getBank();
+
+    String getBankInfo();
 }

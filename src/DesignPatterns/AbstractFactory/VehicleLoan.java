@@ -1,8 +1,8 @@
 package DesignPatterns.AbstractFactory;
 
-public class HomeLoan implements Loan {
+public class VehicleLoan implements Loan {
     @Override
     public double getInterest() {
-        return 8.5;
+        return 9.25;
     }
 }
